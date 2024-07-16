@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Profile" android:id="@+id/profile" android:iconTint="@color/green" android:icon="@drawable/baseline_person_241"/>
+    <group />
+    <item android:title="Emergency Contact" android:id="@+id/E_contact" android:iconTint="@color/green" android:icon="@drawable/baseline_call_241"/>
+    <item android:title="Emergency" android:id="@+id/Emergency" android:iconTint="@color/green" android:icon="@drawable/baseline_emergency_241"/>
+    <item android:title="Geo tag" android:id="@+id/geo_tag" android:iconTint="@color/green" android:icon="@drawable/baseline_location_on_241"/>
+</menu>

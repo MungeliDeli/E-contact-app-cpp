@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+
+    android:orientation="vertical"
+    android:background="@color/WhiteLite">
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="80dp"
+                  android:background="@color/green"
+                  android:padding="20dp">
+
+
+                     <TextView
+                         android:id="@+id/User_name"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_centerVertical="true"
+                         android:gravity="center"
+                         android:includeFontPadding="false"
+                         android:text="REGISTER"
+                         android:textSize="25sp"
+                         android:textStyle="bold" />
+
+
+              </RelativeLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:padding="16dp">
+
+                     <com.google.android.material.textfield.TextInputLayout
+
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                         android:layout_marginBottom="15dp"
+                            android:elevation="20dp"
+                         android:hint="First Name"
+                         app:boxCornerRadiusTopEnd="20dp"
+                         app:boxCornerRadiusTopStart="20dp"
+                         android:textColorHint="@color/black">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/firstName"
+
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:drawableStart="@drawable/baseline_person_outline_241"
+                                android:drawablePadding="10dp"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black" />
+
+
+                     </com.google.android.material.textfield.TextInputLayout>
+
+                     <com.google.android.material.textfield.TextInputLayout
+
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="15dp"
+                         android:hint="Last Name"
+                         android:elevation="20dp"
+                         app:boxCornerRadiusTopEnd="20dp"
+                         app:boxCornerRadiusTopStart="20dp"
+                         android:textColorHint="@color/black">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/lastName"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+
+                                android:drawableStart="@drawable/baseline_person_outline_241"
+                                android:drawablePadding="10dp"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black" />
+
+
+                     </com.google.android.material.textfield.TextInputLayout>
+
+                     <com.google.android.material.textfield.TextInputLayout
+
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="15dp"
+                         android:hint="Address"
+                         android:elevation="20dp"
+                         app:boxCornerRadiusTopEnd="20dp"
+                         app:boxCornerRadiusTopStart="20dp"
+                         android:textColorHint="@color/black">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/homeAddress"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:drawableStart="@drawable/baseline_location_on_241"
+                                android:drawablePadding="10dp"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black" />
+
+
+                     </com.google.android.material.textfield.TextInputLayout>
+
+                     <TextView
+                         android:id="@+id/textView2"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="enter 10 digit numebr"
+                         android:layout_marginBottom="5dp"
+                         android:textColor="#999"/>
+
+                     <com.google.android.material.textfield.TextInputLayout
+
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="15dp"
+                         android:hint="Home Phone"
+                         android:elevation="20dp"
+                         app:boxCornerRadiusTopEnd="20dp"
+                         app:boxCornerRadiusTopStart="20dp"
+                         android:textColorHint="@color/black">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/homePhone"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:drawableStart="@drawable/baseline_call_241"
+                                android:drawablePadding="10dp"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black" />
+
+                     </com.google.android.material.textfield.TextInputLayout>
+
+                     <com.google.android.material.textfield.TextInputLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="15dp"
+                         android:hint="Emergency contact Name"
+                         android:elevation="20dp"
+                         app:boxCornerRadiusTopEnd="20dp"
+                         app:boxCornerRadiusTopStart="20dp"
+                         android:textColorHint="@color/black">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/emergencyContact"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+
+                                android:drawableStart="@drawable/baseline_person_outline_241"
+                                android:drawablePadding="10dp"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black" />
+
+                     </com.google.android.material.textfield.TextInputLayout>
+
+                     <TextView
+                         android:id="@+id/textView3"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="enter 10 digit numebr"
+                         android:layout_marginBottom="5dp"
+                         android:textColor="#999"/>
+
+
+                     <com.google.android.material.textfield.TextInputLayout
+
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="15dp"
+                         android:elevation="20dp"
+                         app:boxCornerRadiusTopEnd="20dp"
+                         app:boxCornerRadiusTopStart="20dp"
+                         android:hint="Emergency contact Number"
+                         android:textColorHint="@color/black">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/emergencyContactNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:drawableStart="@drawable/baseline_call_241"
+
+                                android:drawablePadding="10dp"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black" />
+
+                     </com.google.android.material.textfield.TextInputLayout>
+
+
+                     <Button
+                         android:id="@+id/saveButton"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="10dp"
+                         android:text="Submit" />
+
+                     <Button
+                         android:id="@+id/cancelbutton"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="10dp"
+                         android:text="Cancel" />
+
+
+              </LinearLayout>
+       </LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+
+

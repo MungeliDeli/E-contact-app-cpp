@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationFragment"
+        >
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+
+        tools:context=".LocationFragment">
+
+        <!-- Description Section -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find your Geolocation"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="When calling emergency services, it is necessary to provide accurate information about your location."
+            android:textSize="16sp"
+            android:textColor="#707070"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+                android:id="@+id/body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This E-mergency app helps you to find your geolocation."
+                android:textSize="14sp"
+                android:textColor="#707070"
+                android:layout_marginBottom="6dp"/>
+
+
+        <!-- Find Location Button -->
+        <Button
+            android:id="@+id/find_location_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Current Location"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp"/>
+
+
+        <TextView
+            android:id="@+id/Location_Descripiton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Your Position:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/My_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="6dp"
+            android:text="show my location"
+            android:textColor="#707070"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:visibility="gone" />
+
+
+        <Button
+
+            android:id="@+id/share_location_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp"
+            android:text="Share My Location"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:background="@drawable/rounded_corner_background_l"
+            android:elevation="4dp"
+            >
+        <fragment
+            android:id="@+id/id_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:background="@drawable/rounded_corner_background"
+            android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+</LinearLayout>
+
+
+</LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:orientation="vertical"-->
+    <!--    android:padding="26dp"-->
+    <!--    tools:context=".LocationFragment">-->
+
+    <!--    &lt;!&ndash; Description Section &ndash;&gt;-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/title"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Find your Geolocation"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:layout_marginBottom="8dp"/>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/body"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="When calling emergency services, it is necessary to provide accurate information about your location."-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:textColor="#707070"-->
+    <!--        android:layout_marginBottom="16dp"/>-->
+
+    <!--
+
+    <!-    &lt;!&ndash; Find Location Button &ndash;&gt;-->
+    <!--    <Button-->
+    <!--        android:id="@+id/find_location_button"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Find My Location"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginBottom="16dp"/>-->
+
+    <!--    &lt;!&ndash; Demarcation Line &ndash;&gt;-->
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:background="@android:color/darker_gray"-->
+    <!--        android:layout_marginBottom="16dp"/>-->
+
+    <!--    &lt;!&ndash; Location Display Container &ndash;&gt;-->
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/location_container"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+
+    <!--        android:layout_marginTop="16dp"-->
+
+    <!--        android:background="@drawable/rounded_corner_background"-->
+    <!--        android:elevation="4dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:padding="20dp"-->
+    <!--        android:visibility="gone">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/Location_title"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="16dp"-->
+    <!--            android:text="Your Position"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="24sp"-->
+    <!--            android:textStyle="bold" />-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/Location_description"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="16dp"-->
+    <!--            android:text="you are located at this location:"-->
+    <!--            android:textColor="#707070"-->
+    <!--            android:textSize="16sp" />-->
+
+    <!--        &lt;!&ndash; Location Display Section &ndash;&gt;-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/location_display"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="16dp"-->
+    <!--            android:text="Your location will be displayed here"-->
+    <!--            android:textColor="#707070"-->
+    <!--            android:textSize="18sp"-->
+    <!--            android:textStyle="italic" />-->
+
+    <!--        &lt;!&ndash; See on Map Button &ndash;&gt;-->
+    <!--        <Button-->
+    <!--            android:id="@+id/see_on_map_button"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:text="See on Map" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/send_as_text"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:text="Send as Text"-->
+
+
+    <!--            />-->
+    <!--    </LinearLayout>-->
+    <!--</LinearLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
